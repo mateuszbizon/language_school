@@ -6,6 +6,7 @@
   --color-background-light: var(--background-light);
   --color-background-dark: var(--background-dark);
   --color-foreground: var(--foreground);
+  --color-foreground-light: var(--foreground-light);
   --color-ring: var(--ring);
   --color-border: var(--border);
   --color-destructive: var(--destructive);
@@ -22,7 +23,8 @@
   --background: #E0FFE0;
   --background-light: #F8FFF8;
   --background-dark: #C7FFC7;
-  --foreground: #474838;
+  --foreground: #000000;
+  --foreground-light: #E0FFE0;
   --primary: #6BF178;
   --primary: #00901D;
   --secondary: #FFDB83;
