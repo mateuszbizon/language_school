@@ -1,26 +1,67 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "tw-animate-css";
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-light: var(--background-light);
+  --color-background-dark: var(--background-dark);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ring: var(--ring);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-muted: var(--muted);
+  --color-secondary: var(--secondary);
+  --color-secondary2: var(--secondary2);
+  --color-secondary3: var(--secondary3);
+  --color-primary: var(--primary);
+  --color-primary2: var(--primary2);
+  --spacing-section-padding: var(--section-padding);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --background: #E0FFE0;
+  --background-light: #F8FFF8;
+  --background-dark: #C7FFC7;
+  --foreground: #474838;
+  --primary: #6BF178;
+  --primary: #00901D;
+  --secondary: #FFDB83;
+  --secondary2: #D2A44F;
+  --secondary3: #98701C;
+  --muted: #A1AFA0;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #61FF61;
+  --ring: #6BF178;
+  --section-padding: 5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background-light text-foreground;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+    .heading1 {
+        @apply text-4xl md:text-5xl xl:text-6xl font-bold
+    }
+
+    .heading2 {
+        @apply text-3xl md:text-4xl xl:text-5xl font-bold
+    }
+
+    .heading3 {
+        @apply text-2xl md:text-3xl xl:text-5xl font-semibold
+    }
+
+    .bigger-text {
+        @apply text-lg md:text-xl lg:text-2xl font-medium
+    }
+
+    .heading-margin-bottom {
+        @apply mb-10 md:mb-16
+    }
 }
