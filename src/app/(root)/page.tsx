@@ -1,4 +1,5 @@
 import ImportantNumbers from "@/components/common/ImportantNumbers";
+import FinalSection from "@/components/sections/FinalSection";
 import Hero from "@/components/sections/Hero";
 import Offer from "@/components/sections/Offer";
 import PriceSection from "@/components/sections/PriceSection";
@@ -14,6 +15,7 @@ export default function Home() {
         <WhyUs2 />
         <Offer />
         <PriceSection />
+        <FinalSection />
     </>
   );
 }
