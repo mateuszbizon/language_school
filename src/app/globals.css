@@ -17,6 +17,7 @@
   --color-primary: var(--primary);
   --color-primary2: var(--primary2);
   --spacing-section-padding: var(--section-padding);
+  --spacing-nav-height: var(--nav-height);
 }
 
 :root {
@@ -35,6 +36,7 @@
   --border: #61FF61;
   --ring: #6BF178;
   --section-padding: 5rem;
+  --nav-height: 4.5rem;
 }
 
 @layer base {
