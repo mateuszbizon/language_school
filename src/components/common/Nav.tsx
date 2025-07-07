@@ -3,6 +3,7 @@ import React from 'react'
 import { Button } from '../ui/button'
 import Link from 'next/link'
 import NavMobile from './NavMobile'
+import NavItemCard from '../cards/NavItemCard'
 
 function Nav() {
   return (
@@ -13,11 +14,7 @@ function Nav() {
         <ul className='hidden lg:flex items-center'>
             {navItems.map(item => (
                 <li key={item.label}>
-                    <Button variant={"link"} className='py-0' asChild>
-                        <Link href={item.href}>
-                            {item.label}
-                        </Link>
-                    </Button>
+                    <NavItemCard item={item} />
                 </li>
             ))}
         </ul>

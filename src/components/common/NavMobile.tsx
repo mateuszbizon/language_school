@@ -4,6 +4,7 @@ import { Button } from '../ui/button'
 import { Menu } from 'lucide-react'
 import { navItems } from '@/constants/navItems'
 import Link from 'next/link'
+import NavItemCard from '../cards/NavItemCard'
 
 function NavMobile() {
   return (
@@ -20,11 +21,7 @@ function NavMobile() {
             <ul>
                 {navItems.map(item => (
                     <li key={item.label}>
-                        <Button variant={"link"} className='w-full px-0' asChild>
-                            <Link href={item.href}>
-                                {item.label}
-                            </Link>
-                        </Button>
+                        <NavItemCard item={item} />
                     </li>
                 ))}
             </ul>
