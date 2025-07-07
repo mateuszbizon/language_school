@@ -7,7 +7,9 @@ import NavMobile from './NavMobile'
 function Nav() {
   return (
     <nav className='px-5 flex justify-between items-center fixed top-0 w-full h-nav-height z-30 bg-background-light'>
-        <span className='font-medium'>Szkoła językowa</span>
+        <Link href={"/"} title='Strona główna'>
+            <span className='font-medium'>Szkoła językowa</span>
+        </Link>
         <ul className='hidden lg:flex items-center'>
             {navItems.map(item => (
                 <li key={item.label}>
