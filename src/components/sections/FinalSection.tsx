@@ -12,7 +12,7 @@ function FinalSection() {
                 Pierwsza lekcja w naszej szkole jest <strong>darmowa</strong>. Sprawdź czy nasza szkoła jest dla Ciebie, nic przy tym nie tracąc na starcie.
             </p> */}
             <div className='flex justify-center'>
-                <Button size={"lg"} asChild>
+                <Button size={"lg"} className='px-7 sm:px-10' asChild>
                     <Link href={"/zapisy"}>
                         Odbierz pierwszą darmową lekcje
                     </Link>
