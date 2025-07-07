@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 function FinalSection() {
   return (
-    <section className='py-section-padding'>
+    <section className='py-section-padding md:py-[calc(theme(padding.section-padding)*2)]'>
         <Container>
             <h2 className='heading2 text-center mb-10'>Nie czekaj więcej. Odbierz pierwszą lekcje próbną za <span className='bg-primary rounded-2xl p-2'>0 zł</span></h2>
             {/* <p className='mb-10 bigger-text text-center'>
