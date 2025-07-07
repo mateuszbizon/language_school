@@ -2,10 +2,11 @@ import { navItems } from '@/constants/navItems'
 import React from 'react'
 import { Button } from '../ui/button'
 import Link from 'next/link'
+import NavMobile from './NavMobile'
 
 function Nav() {
   return (
-    <nav className='px-5 flex justify-between items-center fixed w-full top-0 h-nav-height z-30 bg-background-light'>
+    <nav className='px-5 flex justify-between items-center fixed top-0 w-full h-nav-height z-30 bg-background-light'>
         <span className='font-medium'>Szkoła językowa</span>
         <ul className='hidden lg:flex items-center'>
             {navItems.map(item => (
@@ -25,6 +26,9 @@ function Nav() {
                         Zapisz się
                     </Link>
                 </Button>
+            </div>
+            <div className='lg:hidden'>
+                <NavMobile />
             </div>
         </div>
     </nav>
