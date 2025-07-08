@@ -1,3 +1,4 @@
+import ContactContent from '@/components/common/ContactContent'
 import BuyForm from '@/components/forms/BuyForm'
 import Container from '@/components/ui/container'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
@@ -8,7 +9,10 @@ function BuyCoursePage() {
     <>
         <header className='pt-section-padding'>
             <Container>
-                <h1 className='heading1 text-center'>Zapisy</h1>
+                <h1 className='heading1 text-center mb-10'>Zapisy</h1>
+                <p className='text-center little-bigger-text font-medium max-w-[400px] mx-auto'>
+                    Zapisy na zajęcia odbywają się poprzez formularz lub tradycyjny sposób. Wybierz ten który najbardziej do Ciebie pasuję :)
+                </p>
             </Container>
         </header>
         <section className='py-section-padding'>
@@ -26,7 +30,9 @@ function BuyCoursePage() {
                             </div>
                         </Container>
                     </TabsContent>
-                    <TabsContent value="no-form">kontakt</TabsContent>
+                    <TabsContent value="no-form">
+                        <ContactContent />
+                    </TabsContent>
                 </Tabs>
             </Container>
         </section>
