@@ -1,4 +1,5 @@
 import FinalSection from '@/components/sections/FinalSection'
+import SubPageHeader from '@/components/sections/SubPageHeader'
 import Container from '@/components/ui/container'
 import { ABC_BLOCKS, ATOM, BRAIN, CERTIFICATE, GLOBE, WHITE_BOARD } from '@/constants/images'
 import Image from 'next/image'
@@ -7,11 +8,7 @@ import React from 'react'
 function OfferPage() {
   return (
     <>
-        <header className='pt-section-padding'>
-            <Container>
-                <h1 className='heading1 text-center'>Oferta</h1>
-            </Container>
-        </header>
+        <SubPageHeader title='Oferta' />
         <section id='start' className='py-section-padding'>
             <Container>
                 <div className='grid lg:grid-cols-2 gap-5 lg:gap-0'>

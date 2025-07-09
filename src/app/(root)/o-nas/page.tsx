@@ -1,4 +1,5 @@
 import FinalSection from '@/components/sections/FinalSection'
+import SubPageHeader from '@/components/sections/SubPageHeader'
 import WhyUs from '@/components/sections/WhyUs'
 import Container from '@/components/ui/container'
 import React from 'react'
@@ -6,11 +7,7 @@ import React from 'react'
 function AboutPage() {
   return (
     <>
-        <header className='py-section-padding'>
-            <Container>
-                <h1 className='heading1 text-center'>O nas</h1>
-            </Container>
-        </header>
+        <SubPageHeader title='O nas' />
         <section className='py-section-padding'>
             <Container>
                 <div className='grid md:grid-cols-2 gap-10 md:gap-5'>

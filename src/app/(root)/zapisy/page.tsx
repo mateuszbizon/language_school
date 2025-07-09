@@ -1,5 +1,6 @@
 import ContactContent from '@/components/common/ContactContent'
 import BuyForm from '@/components/forms/BuyForm'
+import SubPageHeader from '@/components/sections/SubPageHeader'
 import Container from '@/components/ui/container'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import React from 'react'
@@ -7,16 +8,12 @@ import React from 'react'
 function BuyCoursePage() {
   return (
     <>
-        <header className='pt-section-padding'>
-            <Container>
-                <h1 className='heading1 text-center mb-10'>Zapisy</h1>
-                <p className='text-center little-bigger-text font-medium max-w-[400px] mx-auto'>
-                    Zapisy na zajęcia odbywają się poprzez formularz lub tradycyjny sposób. Wybierz ten który najbardziej do Ciebie pasuję :)
-                </p>
-            </Container>
-        </header>
+        <SubPageHeader title='Zapisy' />
         <section className='py-section-padding'>
             <Container>
+                <p className='text-center little-bigger-text font-medium max-w-[400px] mx-auto mb-10'>
+                    Zapisy na zajęcia odbywają się poprzez formularz lub tradycyjny sposób. Wybierz ten który najbardziej do Ciebie pasuję :)
+                </p>
                 <Tabs defaultValue="form">
                     <TabsList className='max-w-[400px] mx-auto'>
                         <TabsTrigger value="form">z formularzem</TabsTrigger>
