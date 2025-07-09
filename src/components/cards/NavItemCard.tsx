@@ -15,7 +15,7 @@ function NavItemCard({ item }: NavItemCardProps) {
     const isLinkActive = pathname === item.href
 
   return (
-    <Button variant={"link"} className={`w-full px-0 lg:w-auto lg:py-0 lg:px-6 ${isLinkActive && "text-foreground hover:text-foreground"}`} asChild>
+    <Button variant={"link"} className={`w-full px-0 text-lg lg:w-auto lg:py-0 lg:px-6 ${isLinkActive && "text-foreground hover:text-foreground"}`} asChild>
         <Link href={item.href}>
             {item.label}
         </Link>
