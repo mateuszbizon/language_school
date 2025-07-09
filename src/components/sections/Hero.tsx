@@ -8,6 +8,7 @@ import Image from 'next/image'
 import { BOOK_APPLE } from '@/constants/images'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { FlipWords } from '../ui/flip-words'
 
 function Hero() {
     useGSAP(() => {
@@ -30,11 +31,11 @@ function Hero() {
     }, [])
 
   return (
-    <header className='bg-secondary py-section-padding md:py-[calc(theme(padding.section-padding)*2)]'>
+    <header className='bg-secondary py-section-padding md:py-[calc(theme(padding.section-padding)*2)] overflow-hidden'>
         <Container>
             <div className='grid lg:grid-cols-2'>
-                <div className='space-y-8 text-center md:text-left max-w-[800px]'>
-                    <h1 className='text-animate heading1'>Szkoła językowa <br />Otwórz się na <span>podróże</span></h1>
+                <div className='space-y-8 text-center md:text-left '>
+                    <h1 className='text-animate heading1'>Szkoła językowa <br />Otwórz się na <br className='md:hidden' /> <FlipWords words={["języki", "świat", "podróże"]} className='text-primary2' /></h1>
                     <p className='text-animate bigger-text'>
                         Szkoła językowa dzięki której zaczniesz swobodnie rozmawiać z każdym i to wszędzie.
                     </p>
