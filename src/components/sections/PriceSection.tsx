@@ -16,7 +16,7 @@ function PriceSection() {
                     </div>
                     <p className='heading2'>70 zł</p>
                     <Button className='w-full' asChild>
-                        <Link href={"/zapisy"}>
+                        <Link href={"/zapisy?option=option-single"}>
                             Zapisuję się
                         </Link>
                     </Button>
@@ -35,7 +35,7 @@ function PriceSection() {
                     </div>
                     <p className='heading2'>50 zł</p>
                     <Button className='w-full' asChild>
-                        <Link href={"/zapisy"}>
+                        <Link href={"/zapisy?option=option-pair"}>
                             Zapisuję się
                         </Link>
                     </Button>
@@ -57,7 +57,7 @@ function PriceSection() {
                     </div>
                     <p className='heading2'>45 zł</p>
                     <Button className='w-full' asChild>
-                        <Link href={"/zapisy"}>
+                        <Link href={"/zapisy?option=option-group"}>
                             Zapisuję się
                         </Link>
                     </Button>

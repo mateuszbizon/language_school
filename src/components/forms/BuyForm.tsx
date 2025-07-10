@@ -11,12 +11,15 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { Input } from '../ui/input'
 import { DAYS } from '@/constants/course'
 import { Checkbox } from '../ui/checkbox'
+import { useSearchParams } from 'next/navigation'
 
 function BuyForm() {
+    const searchParams = useSearchParams()
+    const searchOption = searchParams.get("option") as CourseSchema["option"] | null
     const form = useForm<CourseSchema>({
         resolver: zodResolver(courseSchema),
         defaultValues: {
-            option: undefined,
+            option: searchOption ? searchOption : undefined,
             englishLevel: undefined,
             learnDay: undefined,
             name: "",
