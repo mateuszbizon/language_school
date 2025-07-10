@@ -3,7 +3,7 @@ import BuyForm from '@/components/forms/BuyForm'
 import SubPageHeader from '@/components/sections/SubPageHeader'
 import Container from '@/components/ui/container'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import React from 'react'
+import React, { Suspense } from 'react'
 
 function BuyCoursePage() {
   return (
@@ -23,7 +23,9 @@ function BuyCoursePage() {
                         <Container className='px-0 max-w-[600px]'>
                             <div className='rounded-xl p-7 shadow-xl border space-y-10'>
                                 <h2 className='heading3'>Formulasz zapisu</h2>
-                                <BuyForm />
+                                <Suspense>
+                                    <BuyForm />
+                                </Suspense>
                             </div>
                         </Container>
                     </TabsContent>
